@@ -13,8 +13,40 @@ $green-700: #388e3c;
 $green-800: #2e7d32;
 $green-900: #1b5e20;
 
+$grey-green-050: #e5e6e5;
+$grey-green-100: #cfd1cf;
+$grey-green-200: #b8bbb8;
+$grey-green-300: #a1a5a1;
+$grey-green-400: #8a8f8a;
+$grey-green-500: #737973;
+$grey-green-600: #5c635c;
+$grey-green-700: #464d46;
+$grey-green-800: #2f362f;
+$grey-green-900: #1a1b1a;
+
+
 // Override primary color variables
 $link-color: $green-500;
 $nav-child-link-color: $green-700;
 $sidebar-color: $grey-dk-300;
 $btn-primary-color: $green-400;
+
+$color-scheme: dark;
+
+// Substitute grey-dk-* and grey-lt-* with custom grey-greens
+$body-background-color: $grey-green-900;
+$body-heading-color: $grey-green-050;
+$body-text-color: $grey-green-300;
+
+$nav-child-link-color: $grey-green-100;
+$sidebar-color: $grey-green-900;
+$base-button-color: $grey-green-800;
+
+$code-background-color: #31343f; // OneDarkJekyll default
+$code-linenumber-color: #dee2f7;
+
+$feedback-color: darken($sidebar-color, 3%);
+$table-background-color: $grey-green-800;
+$search-background-color: $grey-green-800;
+$search-result-preview-color: $grey-green-100;
+$border-color: $grey-green-700;

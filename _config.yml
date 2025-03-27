@@ -5,6 +5,17 @@ color_scheme: green
 
 source: docs
 
+callouts:
+  warning:
+    title: Warning
+    color: red
+
+collections:
+  announcements:
+    output: true
+    permalink: /announcements/:title/
+
+
 url: https://aj-floater.github.io/
 
 logo: "/assets/images/hack-logo.png"
