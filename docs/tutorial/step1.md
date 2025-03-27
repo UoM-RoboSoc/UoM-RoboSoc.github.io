@@ -1,7 +1,7 @@
 ---
 title: Step 1
 parent: Tutorial
-nav_order: 1
+layout: default
 ---
 # Step 1
 

@@ -1,6 +1,6 @@
 ---
 title: Tutorial
-nav_order: 2
+layout: default
 has_children: true
 ---
 # Tutorial

@@ -1,6 +1,6 @@
 ---
 title: Guide
-nav_order: 1
+layout: default
 ---
 # Guide
 
