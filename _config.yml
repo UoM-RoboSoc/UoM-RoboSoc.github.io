@@ -1,10 +1,13 @@
-title: Hack
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Hack-a-Bot 2025
+description: The UoM Robotics Societies 2025 Hackathon information website.
 theme: just-the-docs
+color_scheme: dark
 
 source: docs
 
-url: https://aj-floater.github.io/Hack
+url: https://aj-floater.github.io/
+
+logo: "/assets/images/hack-logo.png"
 
 aux_links:
-  Template Repository: https://github.com/aj-floater/Hack
+  Github Repository: https://github.com/UoM-Robotics-Society/HackABot2025
