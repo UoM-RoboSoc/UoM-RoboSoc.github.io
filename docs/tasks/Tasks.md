@@ -83,7 +83,13 @@ The University is busy with many moving parts. Your goal is to create an innovat
 
 You’ll earn **bonus points** for creative use of the AI camera **in combination** with any of our specialized components from the hackathon inventory. Think beyond just image capture; integrate sensors, mechanical elements, or additional microcontrollers to create a truly innovative solution.
 
-We also offer extra prizes later (tbd... archie please finish this)
+### Use Case Sharing
+
+Instead of distributing a traditional feedback form, we’re building the **sharing** requirement directly into the challenge. Each team must **post their use case** on a designated platform (we’re considering the official [Raspberry Pi Forum](https://www.raspberrypi.org/forums/) but are open to suggestions) to showcase what you’ve built to the broader community.
+
+To encourage active promotion, we’re introducing a **“Community Winners”** category. **One month** after the hackathon ends, we’ll check which projects get the highest visibility (e.g., most views or shares). The top **two teams** will each receive an **additional prize**. 
+
+This approach helps us amplify your creative work, fosters knowledge-sharing, and underscores our priority: getting your projects seen and discussed by a wider audience. So, once you’ve finished building, **spread the word**—and good luck!  
 
 ---
 

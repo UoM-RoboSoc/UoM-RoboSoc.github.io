@@ -29,7 +29,7 @@ Welcome to Hack-A-Bot 2025! This site is your go-to hub for everything happening
 
 ## Introduction
 
-Hack-A-Bot is run by students, for students — with help from a lot of robots and Raspberry Pis.
+Hack-A-Bot is run by students, for students — with help from a lot of robots, arduinos and Raspberry Pis.
 
 The event is organised by the UoM Robotics Society Events Team, with key leads being:
 

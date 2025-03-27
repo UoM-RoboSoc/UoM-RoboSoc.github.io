@@ -1,174 +1,218 @@
-# just-the-docs-template
+# README
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+**Note**: This file is **not** intended to appear on the live website. It’s for internal documentation, explaining how to work with this Jekyll site, how to add new pages, announcements, images, and more.
 
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
+---
 
-More specifically, the created site:
+## Table of Contents
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
+1. [What This Website Is](#what-this-website-is)
+2. [How It Works (Jekyll, GitHub Pages, Just the Docs)](#how-it-works-jekyll-github-pages-just-the-docs)
+3. [Adding a New Page](#adding-a-new-page)
+4. [Adding Announcements](#adding-announcements)
+5. [Child Pages & Navigation](#child-pages--navigation)
+6. [Images & Assets](#images--assets)
+7. [Formatting Content (Markdown & Just the Docs)](#formatting-content-markdown--just-the-docs)
+8. [Using ChatGPT for Assistance](#using-chatgpt-for-assistance)
+9. [Directory Structure Overview](#directory-structure-overview)
 
-To get started with creating a site, simply:
+---
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+## What This Website Is
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](#hosting-your-docs-from-an-existing-project-repo).
+This repository hosts a **Jekyll-based website** published via **GitHub Pages**.  
+- We use the [**Just the Docs**](https://just-the-docs.github.io/just-the-docs/) Jekyll theme to style our documentation and provide a sidebar/navigation structure.
 
-After completing the creation of your new site on GitHub, update it as needed:
+The primary purpose of the site is to share information about the UoM Robotics Society’s 2025 Hack-A-Bot event, including:
+- A home page (introduction and quick links)
+- Detailed tasks
+- Schedules
+- Announcements
+- General hackathon info (rules, guidelines, volunteer info, etc.)
 
-## Replace the content of the template pages
+---
 
-Update the following files to your own content:
+## How It Works (Jekyll, GitHub Pages, Just the Docs)
 
-- `index.md` (your new home page)
-- `README.md` (information for those who access your site repo on GitHub)
+1. **Jekyll**  
+   Jekyll is a static site generator that turns `.md` and `.html` files into a complete static website. When changes are pushed to the `main` (or relevant) branch, GitHub Pages automatically rebuilds the site.
 
-## Changing the version of the theme and/or Jekyll
+2. **GitHub Pages**  
+   GitHub Pages hosts your Jekyll site for free. Whenever you commit to the default branch (often `main`), GitHub will rebuild and update the live site at the specified URL (e.g., `https://aj-floater.github.io-1/`).
 
-Simply edit the relevant line(s) in the `Gemfile`.
+3. **Just the Docs**  
+   This is the theme providing the layout, navigation, and styling. It offers:
+   - Automatic table of contents
+   - Search functionality
+   - Easy front matter control for page ordering and sidebar headings
 
-## Adding a plugin
+---
 
-The Just the Docs theme automatically includes the [`jekyll-seo-tag`] plugin.
+## Adding a New Page
 
-To add an extra plugin, you need to add it in the `Gemfile` *and* in `_config.yml`. For example, to add [`jekyll-default-layout`]:
+1. **Create a Markdown File**  
+   In the `docs/` folder (or a subfolder within it), create a new `.md` file. For instance, `docs/my-new-page.md`.
 
-- Add the following to your site's `Gemfile`:
+2. **Front Matter**  
+   At the top of your `.md`, include something like:
+   ```yaml
+   ---
+   title: My New Page
+   layout: default
+   nav_order: 10
+   ---
+   ```
+   - `title` is what appears in the page header and the sidebar.
+   - `layout: default` uses the Just the Docs base layout.
+   - `nav_order` controls the page’s order in the sidebar (lower = higher on the list, so choose carefully).
 
-  ```ruby
-  gem "jekyll-default-layout"
-  ```
+3. **Write Your Content**  
+   Use Markdown to format headings, paragraphs, images, code blocks, etc.  
+   For example:
+   ```markdown
+   # My New Page
 
-- And add the following to your site's `_config.yml`:
+   Welcome to this new page with important hackathon info.
+   ```
 
-  ```yaml
-  plugins:
-    - jekyll-default-layout
-  ```
+4. **Commit & Push**  
+   Once you push changes to the repo, GitHub Pages will rebuild. Your new page will appear in the sidebar if you have **just-the-docs** style navigation set up in `_config.yml`.
 
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
+---
 
-## Publishing your site on GitHub Pages
+## Adding Announcements
 
-1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
+We have a custom [announcements collection] in `docs/_announcements`:
+1. **Create a new file** in `docs/_announcements` (e.g., `2025-04-01-robotics-demo.md`).
+2. **Front Matter** might look like:
+   ```yaml
+   ---
+   title: "Robotics Demo"
+   author: "Izzy"
+   date: 2025-04-01 15:00:00
+   ---
+   ```
+   - `title`: short announcement title
+   - `author`: who posted it
+   - `date`: date and time
+3. **Add your content** below the front matter. Markdown formatting is allowed:
+   ```markdown
+   The Makerspace will host a special robotics demo at 3 PM.
+   ```
+4. **Save/Commit/Push**. The file will automatically appear under [Announcements](../announcements.md) (the main announcements page) once the site rebuilds.
 
-    ```yaml
-    title: YOUR TITLE
-    description: YOUR DESCRIPTION
-    theme: just-the-docs
+---
 
-    url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
+## Child Pages & Navigation
 
-    aux_links: # remove if you don't want this link to appear on your pages
-      Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
-    ```
+- **Hierarchy**: You can organize pages in subfolders (like `docs/tasks/`) and link them in the main `tasks.md` or use front matter to nest them under a parent.  
+- **nav_order** & **parent**: In the `_config.yml` or within each page, you can define the hierarchy. See [Just the Docs navigation docs](https://just-the-docs.github.io/just-the-docs/docs/navigation-structure/) for details.
 
-2.  Push your updated `_config.yml` to your site on GitHub.
+Example front matter for a child page:
+```yaml
+---
+title: "Task 1"
+parent: "Tasks"  # The exact title of the parent page
+nav_order: 1
+---
+```
 
-3.  In your newly created repo on GitHub:
-    - go to the `Settings` tab -> `Pages` -> `Build and deployment`, then select `Source`: `GitHub Actions`.
-    - if there were any failed Actions, go to the `Actions` tab and click on `Re-run jobs`.
+---
 
-## Building and previewing your site locally
+## Images & Assets
 
-Assuming [Jekyll] and [Bundler] are installed on your computer:
+1. Place images in `docs/assets/images` or a subfolder (like `docs/assets/images/organisers`).
+2. Reference them in Markdown with a relative path:
+   ```markdown
+   ![Team Photo](/docs/assets/images/organisers/teamphoto.png)
+   ```
+   or using Jekyll’s relative_url filter:
+   ```markdown
+   ![Team Photo]({{ '/docs/assets/images/organisers/teamphoto.png' | relative_url }})
+   ```
+3. **Sizing or alignment**: Use standard Markdown image syntax or inline HTML for more control:
+   ```markdown
+   <img src="{{ '/docs/assets/images/organisers/teamphoto.png' | relative_url }}" width="300" alt="Team Photo" />
+   ```
 
-1.  Change your working directory to the root directory of your site.
+---
 
-2.  Run `bundle install`.
+## Formatting Content (Markdown & Just the Docs)
 
-3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
+**Headings**  
+Use `# H1`, `## H2`, `### H3`, etc.
 
-    The built site is stored in the directory `_site`.
+**Code Blocks**  
+Use triple backticks (```) for fenced code blocks. E.g.,
+````markdown
+```bash
+echo "Hello World"
+```
+````
+You can specify the language (like `bash`, `python`, `javascript`) for syntax highlighting.
 
-## Publishing your built site on a different platform
+**Tables**  
+Use standard Markdown table syntax:
+```markdown
+| Column A | Column B |
+|----------|----------|
+| Row 1    | Row 1    |
+| Row 2    | Row 2    |
+```
 
-Just upload all the files in the directory `_site`.
+**Lists**  
+- Use `-` or `*` for unordered lists.
+- Use `1., 2., 3.` for ordered lists.
 
-## Customization
+**Just the Docs**  
+- Provides built-in [search](https://just-the-docs.github.io/just-the-docs/docs/search/).
+- Allows [custom color schemes](https://just-the-docs.github.io/just-the-docs/docs/color-settings/).
+- Manage site settings in `_config.yml`.
 
-You're free to customize sites that you create with this template, however you like!
+---
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+## Using ChatGPT for Assistance
 
-## Hosting your docs from an existing project repo
+When you need help **formatting content in Markdown** or generating boilerplate text:
+1. Go to ChatGPT (or your AI tool of choice).
+2. Provide the rough text and ask for a “nicely formatted Markdown” version.  
+3. Copy the result into your `.md` file.
 
-You might want to maintain your docs in an existing project repo. Instead of creating a new repo using the [just-the-docs template](https://github.com/just-the-docs/just-the-docs-template), you can copy the template files into your existing repo and configure the template's Github Actions workflow to build from a `docs` directory. You can clone the template to your local machine or download the `.zip` file to access the files.
+**Tip**: You can also ask ChatGPT to generate code blocks, tables, or entire page structures for you. Just remember to review for accuracy before committing!
 
-### Copy the template files
+---
 
-1.  Create a `.github/workflows` directory at your project root if your repo doesn't already have one. Copy the `pages.yml` file into this directory. GitHub Actions searches this directory for workflow files.
+## Directory Structure Overview
 
-2.  Create a `docs` directory at your project root and copy all remaining template files into this directory.
+Here’s a simplified look at the important parts:
 
-### Modify the GitHub Actions workflow
+```
+aj-floater.github.io-1/
+├── .github/                # GitHub-related configs (e.g., workflows)
+├── .gitignore
+├── .vscode/
+├── Gemfile, Gemfile.lock   # Ruby dependencies for Jekyll
+├── LICENSE
+├── README.md               # (THIS FILE) Internal documentation
+├── _config.yml             # Main Jekyll configuration & Just the Docs settings
+├── _site/                  # Generated site (do not edit manually)
+└── docs/                   # Actual site content
+    ├── _announcements/     # Markdown files for each announcement
+    ├── _sass/              # SCSS files for custom styling
+    ├── announcements.md    # The main Announcements index page
+    ├── assets/             # Images, CSS, and other static files
+    ├── index.md            # Homepage
+    ├── schedule.md         # Schedule page
+    └── tasks/             # Folder for task pages
+        ├── Task 1.md
+        ├── Task 2.md
+        └── Task 3.md
+```
 
-The GitHub Actions workflow that builds and deploys your site to Github Pages is defined by the `pages.yml` file. You'll need to edit this file to that so that your build and deploy steps look to your `docs` directory, rather than the project root.
+- **docs/** is where you’ll spend most of your time adding or updating pages.  
+- **_site/** is auto-generated on build. Don’t manually change anything in `_site/`.  
+- **Gemfile** / **Gemfile.lock** manage Jekyll’s plugins and theme dependencies.  
 
-1.  Set the default `working-directory` param for the build job.
+---
 
-    ```yaml
-    build:
-      runs-on: ubuntu-latest
-      defaults:
-        run:
-          working-directory: docs
-    ```
-
-2.  Set the `working-directory` param for the Setup Ruby step.
-
-    ```yaml
-    - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
-          cache-version: 0
-          working-directory: '${{ github.workspace }}/docs'
-    ```
-
-3.  Set the path param for the Upload artifact step:
-
-    ```yaml
-    - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs/_site/
-    ```
-
-4.  Modify the trigger so that only changes within the `docs` directory start the workflow. Otherwise, every change to your project (even those that don't affect the docs) would trigger a new site build and deploy.
-
-    ```yaml
-    on:
-      push:
-        branches:
-          - "main"
-        paths:
-          - "docs/**"
-    ```
-
-## Licensing and Attribution
-
-This repository is licensed under the [MIT License]. You are generally free to reuse or extend upon this code as you see fit; just include the original copy of the license (which is preserved when you "make a template"). While it's not necessary, we'd love to hear from you if you do use this template, and how we can improve it for future use!
-
-The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party [starter workflows]. A copy of their MIT License is available in [actions/starter-workflows].
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Jekyll]: https://jekyllrb.com
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[Bundler]: https://bundler.io
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
-[`jekyll-default-layout`]: https://github.com/benbalter/jekyll-default-layout
-[`jekyll-seo-tag`]: https://jekyll.github.io/jekyll-seo-tag
-[MIT License]: https://en.wikipedia.org/wiki/MIT_License
-[starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
-[actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
+**That’s it!** If you have any questions or run into issues, check the [Jekyll documentation](https://jekyllrb.com/) or ping Archie. The site should remain straightforward to update thanks to Markdown, Just the Docs, and GitHub Pages. Enjoy! 
