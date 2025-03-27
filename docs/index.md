@@ -35,16 +35,20 @@ The event is organised by the UoM Robotics Society Events Team, with key leads b
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <figure style="text-align: center;">
-    <img src="assets/images/organiser1.png" width="150" />
+    <img src="assets/images/organisers/archie.png" width="150" />
     <figcaption>Archie</figcaption>
   </figure>
   <figure style="text-align: center;">
-    <img src="assets/images/organiser2.png" width="150" />
+    <img src="assets/images/organisers/ted.jpg" width="150" />
     <figcaption>Ted</figcaption>
   </figure>
   <figure style="text-align: center;">
-    <img src="assets/images/organiser3.png" width="150" />
+    <img src="assets/images/organisers/izzy.png" width="150" />
     <figcaption>Izzy</figcaption>
+  </figure>
+  <figure style="text-align: center;">
+    <img src="assets/images/organisers/thierry.jpg" width="150" />
+    <figcaption>Thierry</figcaption>
   </figure>
 </div>
 
@@ -111,14 +115,48 @@ If in doubt, **just ask** — we're here to help.
 
 ## Safety Guidelines
 
-All participants must have completed the Makerspace safety induction to use the makerspace. Please follow the link below to complete it. 
-👉 Link coming soon.
+All participants must have completed the Makerspace safety induction to use the makerspace. 
+
+[Makerspace Induction](https://online.manchester.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_14584806_1&course_id=_75608_1&mode=reset)
+
+Follow the link, login to your manchester account and click on *Makerspace Local Induction*
+You have to complete the induction course first then achieve 100% on the quiz.
 
 ---
 
 ## Merch
 
 You should’ve received your official Hack-A-Bot merch at registration.  
-Didn’t get any? Want more? Speak to **[Name TBD]** and we’ll sort you out.
+Didn’t get any? Want more? Speak to a supervisor and we’ll sort you out.
 
 ---
+
+<style>
+  .logo-grid {
+    /* Creates a responsive grid that auto-fills each row with equal-width tiles */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem; /* space between logos */
+    margin-bottom: 2rem;
+    justify-items: center; /* center each logo in its cell */
+    align-items: center;
+  }
+
+  .logo-grid img {
+    /* Ensure logos don’t overflow their grid cell */
+    width: 100%;
+    height: auto;
+    object-fit: contain; 
+  }
+</style>
+
+## Our Sponsors
+
+<div class="logo-grid">
+  <img src="{{ '/assets/images/sponsor-logos/amentum-logo.png' | relative_url }}" alt="Amentum" />
+  <img src="{{ '/assets/images/sponsor-logos/cradle-logo.png' | relative_url }}" alt="Cradle" />
+  <img src="{{ '/assets/images/sponsor-logos/dominos-logo.png' | relative_url }}" alt="Domino's" />
+  <img src="{{ '/assets/images/sponsor-logos/ice9-logo.png' | relative_url }}" alt="ICE9" />
+  <img src="{{ '/assets/images/sponsor-logos/makerspace-logo.png' | relative_url }}" alt="Makerspace" />
+  <img src="{{ '/assets/images/sponsor-logos/redbull-logo.jpg.png' | relative_url }}" alt="Red Bull" />
+</div>
