@@ -1,3 +1,7 @@
+---
+title: Test
+nav_order: 2
+---
 # Test Markdown Page
 
 Welcome to this **test markdown page**! This is a simple example to demonstrate basic markdown formatting.
