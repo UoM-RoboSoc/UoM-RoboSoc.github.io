@@ -2,6 +2,8 @@ title: Hack
 description: A starter template for a Jeykll site using the Just the Docs theme!
 theme: just-the-docs
 
+source: docs
+
 url: https://aj-floater.github.io/Hack
 
 aux_links:
