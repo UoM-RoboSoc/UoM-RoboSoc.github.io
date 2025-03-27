@@ -8,6 +8,8 @@ Welcome to this **test markdown page**! This is a simple example to demonstrate 
 
 ---
 
+![image](/assets/images/hack-logo.png)
+
 ## Table of Contents
 
 1. [Introduction](#introduction)

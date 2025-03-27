@@ -1,13 +1,14 @@
 title: Hack-a-Bot 2025
 description: The UoM Robotics Societies 2025 Hackathon information website.
 theme: just-the-docs
-color_scheme: dark
+color_scheme: green
 
 source: docs
 
 url: https://aj-floater.github.io/
 
 logo: "/assets/images/hack-logo.png"
+favicon_ico: "/assets/images/favicon.ico"
 
 aux_links:
   Github Repository: https://github.com/UoM-Robotics-Society/HackABot2025

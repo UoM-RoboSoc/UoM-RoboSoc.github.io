@@ -1,0 +1,20 @@
+// Import the default light color scheme as a base
+@import "./color_schemes/dark";
+
+// Define custom green color variables (less turquoise, more natural green)
+$green-000: #e8f5e9;
+$green-100: #c8e6c9;
+$green-200: #a5d6a7;
+$green-300: #81c784;
+$green-400: #66bb6a;
+$green-500: #4caf50; // Main green
+$green-600: #43a047;
+$green-700: #388e3c;
+$green-800: #2e7d32;
+$green-900: #1b5e20;
+
+// Override primary color variables
+$link-color: $green-500;
+$nav-child-link-color: $green-700;
+$sidebar-color: $grey-dk-300;
+$btn-primary-color: $green-400;
