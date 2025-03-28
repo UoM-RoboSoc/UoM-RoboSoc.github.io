@@ -1,5 +1,5 @@
 ---
-title: Announcements
+title: 📢 Announcements
 layout: default
 nav_order: 1
 ---

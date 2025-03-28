@@ -1,5 +1,5 @@
 ---
-title: Home
+title: 🏠 Home
 layout: home
 nav_order: 2
 ---
@@ -34,20 +34,20 @@ Hack-A-Bot is run by students, for students — with help from a lot of robots, 
 The event is organised by the UoM Robotics Society Events Team, with key leads being:
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <figure style="text-align: center;">
-    <img src="assets/images/organisers/archie.png" width="150" />
+  <figure style="text-align: center; width: 150px; overflow: hidden;">
+    <img src="assets/images/organisers/archie.png" style="height: 200px; width: auto; object-fit: cover; display: block;" />
     <figcaption>Archie</figcaption>
   </figure>
-  <figure style="text-align: center;">
-    <img src="assets/images/organisers/ted.jpg" width="150" />
+  <figure style="text-align: center; width: 150px; overflow: hidden;">
+    <img src="assets/images/organisers/ted.jpg" style="height: 200px; width: auto; object-fit: cover; display: block;" />
     <figcaption>Ted</figcaption>
   </figure>
-  <figure style="text-align: center;">
-    <img src="assets/images/organisers/izzy.png" width="150" />
+  <figure style="text-align: center; width: 150px; overflow: hidden;">
+    <img src="assets/images/organisers/izzy.png" style="height: 200px; width: auto; object-fit: cover; display: block;" />
     <figcaption>Izzy</figcaption>
   </figure>
-  <figure style="text-align: center;">
-    <img src="assets/images/organisers/thierry.jpg" width="150" />
+  <figure style="text-align: center; width: 150px; overflow: hidden;">
+    <img src="assets/images/organisers/thierry.jpg" style="height: 200px; width: auto; object-fit: cover; display: block;" />
     <figcaption>Thierry</figcaption>
   </figure>
 </div>
@@ -115,12 +115,33 @@ If in doubt, **just ask** — we're here to help.
 
 ## Safety Guidelines
 
-All participants must have completed the Makerspace safety induction to use the makerspace. 
+All participants **must** complete the Makerspace safety induction before using the Makerspace:
 
 [Makerspace Induction](https://online.manchester.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_14584806_1&course_id=_75608_1&mode=reset)
 
-Follow the link, login to your manchester account and click on *Makerspace Local Induction*
-You have to complete the induction course first then achieve 100% on the quiz.
+1. Log in with your Manchester account.  
+2. Click on **Makerspace Local Induction**.  
+3. Complete the induction course, then score **100%** on the quiz.
+
+---
+
+## Floor Plan
+
+We've worked closely with **TEAMs** to ensure we’ve secured as much space as possible across the Nancy Rothwell Building for Hack-A-Bot. Please respect the designated areas — they’ve been carefully planned for your use throughout the event.
+
+Anyone found using restricted areas without explicit permission will be asked to leave those spaces. Second offences will not be tolerated.
+
+The Engineering Building is an incredible facility, and we want to make sure future RoboSoc members (and students in general) can continue hosting exciting events here.
+
+[View the full floor plan]({{ '/floorplan' | relative_url }})
+
+---
+
+## Sleeping Arrangements
+
+Please note that **prolonged sleeping anywhere in the building is strictly disallowed**. We do, however, have a **dedicated rest area** near the Spanish Steps on the ground floor, equipped with bean bags for short “power naps.” If anyone is found sleeping elsewhere, we’ll have to wake you and suggest heading home if you need a more substantial rest, then returning fresh in the morning.
+
+Thanks for understanding our need to maintain a safe, productive environment. And if you really need a boost—maybe a **Red Bull** will do the trick!
 
 ---
 
