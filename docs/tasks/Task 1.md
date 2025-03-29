@@ -1,6 +1,6 @@
 ---
 title: Toxic Waste Disposal
-parent: Tasks
+parent: 🧑‍💻 Tasks
 layout: default
 nav_order: 1
 ---
@@ -41,7 +41,7 @@ A critical mission awaits: your robot must transport a microcontroller-equipped 
 | ![Motor]({{ '/assets/images/kit/motor.png' | relative_url }}){:style="max-height:100px;"}<br>**Motors** | Basic DC motors for driving wheels or other mechanisms. You’ll likely receive 2–4 of these, depending on your rover configuration. |
 | ![Wheels]({{ '/assets/images/kit/wheel.png' | relative_url }}){:style="max-height:100px;"}<br>**Wheels** | Accompanying wheels to attach to the motors. |
 | ![Motor Driver]({{ '/assets/images/kit/motor-driver.png' | relative_url }}){:style="max-height:100px;"}<br>**Motor Driver Breakout Board** | The l293d module. Handles current flow to your motors. Attach it to the Arduino/ESP32 for motor control signals. |
-| ![SG90 Servo]({{ '/assets/images/kit/sg90-servo.png' | relative_url }}){:style="max-height:100px;"}<br>**Servos (SG90)** | Small, lightweight servos. Often used for steering or simple grippers. Supplied in packs of 2–4. |
+| ![SG90 Servo]({{ '/assets/images/kit/sg90-servo.png' | relative_url }}){:style="max-height:100px;"}<br>**Servos (SG90)** | Small, lightweight servos. Often used for steering or simple grippers. Supplied as a pack of 4. |
 | ![Bluetooth HC-05]({{ '/assets/images/kit/hc05.png' | relative_url }}){:style="max-height:100px;"}<br>**HC-05 Bluetooth Module** | Allows simple serial communication over Bluetooth. Useful for sending instructions wirelessly. |
 | **Battery Case**                                | Holds AA batteries for powering your circuit.                            |
 | **AA Batteries**                                | Basic 1.5V cells (quantity depends on your kit).                        |
@@ -57,7 +57,7 @@ Need extra sensors, parts, or specialized tools? Request them through the standa
 
 ## Modifications
 
-We **encourage creativity**! Feel free to **3D-print** custom parts (no special approvals required, beyond standard [3D Printing Guidelines]({{ '/3d-printing' | relative_url }})). You can even head to Tesco and build your chassis out of a **meal deal sandwich box** — no problem.
+We **encourage creativity**! Feel free to **3D-print** custom parts (no special approvals required, beyond standard [3D Printing Guidelines]({{ '/3dprinting' | relative_url }})). You can even head to Tesco and build your chassis out of a **meal deal sandwich box** — no problem.
 
 - **No Weight Limits:** However, remember the robot needs to fit through the **Dark Box** entrance. We’ll publish recommended size limits once we finalize the Dark Box dimensions.  
 - **Go Wild:** As long as you stay safe, your design approach is up to you!
@@ -78,6 +78,55 @@ We **encourage creativity**! Feel free to **3D-print** custom parts (no special 
   - **Wi-Fi** features on the ESP32 Camera Module (e.g., for video streaming).  
 
 Feel free to integrate real-time data into your control system—just keep the barrel’s movement gentle!  
+
+---
+
+## Barrel Information
+
+To help you design your robot around the **toxic waste barrel**, we’ve provided technical drawings, dimensions, and guidance on how best to move it.
+
+### Barrel Dimensions
+
+A detailed **technical drawing** is added below. This will include:
+
+- **Height**, **diameter**, and **clearance zones**
+- **Mounting points** (if any) or typical center of mass
+- **Side, top, and bottom views**
+
+<div style="text-align: center; margin-top: 1em;">
+  <img src="{{ '/assets/images/barrel/barrel-drawing.jpeg' | relative_url }}" alt="Barrel Technical Drawing" style="max-height: 300px;" />
+  <p><em>↑ Barrel diagram</em></p>
+</div>
+
+### Handling Recommendations
+
+You are free to design **any mechanism** to carry or stabilize the barrel — just make sure your robot minimizes sudden movements and avoids dropping it.
+
+Some common solutions include:
+
+- **Servo Claws**  
+  Use two SG90 servos (included in your kit) with L-shaped 3D-printed arms or laser-cut panels to grip the barrel from either side.
+
+- **Suspended Platform**  
+  Create a U-shaped frame with the barrel resting in a low cradle. One servo can tilt the cradle forward for release.
+
+- **Drop-in Basket + Gate**  
+  A passive “basket” with a servo-powered gate or latch to hold the barrel in place until it’s time to release it.
+
+- **Wedge + Friction Pads**  
+  Use angled arms or a foam-lined container to gently wedge the barrel in place with minimal grip force.
+
+You’re encouraged to **prototype creatively**, but remember:
+- The barrel contains a **sensitive microcontroller with sensors** — it will detect sharp impacts and side-to-side motion.
+
+### Barrel Reference Image
+
+Here’s a look at the 5 barrels used across the event:
+
+<div style="text-align: center; margin-top: 1em;">
+  <img src="{{ '/assets/images/barrel/barrels-group-photo.png' | relative_url }}" alt="Barrels Group Photo" style="max-height: 300px;" />
+  <p><em>↑ All 5 toxic waste barrels used during the challenge</em></p>
+</div>
 
 ---
 
@@ -110,11 +159,11 @@ Feel free to integrate real-time data into your control system—just keep the b
 ## Tips & Common Mistakes
 
 - *(Quick bullet points or FAQs about typical challenges, e.g., ramp friction, battery life, sensor calibration, etc.)*
-- This will be updated as the event proceeds
+- *This will be updated as the event proceeds*
 
 ---
 
 ## Resources & References
 
 - *(Links to tutorials, official docs, or example code if provided.)*
-- This will be updated as the event proceeds
+- *This will be updated as the event proceeds*

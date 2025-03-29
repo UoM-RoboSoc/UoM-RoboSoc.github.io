@@ -1,5 +1,5 @@
 ---
-title: Floorplan
+title: 🏢 Floorplan
 layout: default
 nav_order: 5
 ---

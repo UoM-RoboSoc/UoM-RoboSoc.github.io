@@ -1,5 +1,5 @@
 ---
-title: Schedule
+title: 📆 Schedule
 layout: default
 nav_order: 4
 ---

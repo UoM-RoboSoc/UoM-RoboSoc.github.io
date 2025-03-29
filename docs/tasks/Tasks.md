@@ -1,5 +1,5 @@
 ---
-title: Tasks
+title: 🧑‍💻 Tasks
 layout: default
 
 nav_order: 3

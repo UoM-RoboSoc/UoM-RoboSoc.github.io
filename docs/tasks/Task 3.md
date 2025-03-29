@@ -1,6 +1,6 @@
 ---
 title: Raspberry Pi AI Camera
-parent: Tasks
+parent: 🧑‍💻 Tasks
 layout: default
 nav_order: 3
 ---
