@@ -156,6 +156,16 @@ For a better understanding of remote connection methods to your Raspberry Pi onc
 
 ---
 
+**Judging Criteria**
+
+The preliminary judging criteria is below, more details will be provided later.
+
+- Effectiveness
+- Creativity
+- Use of the camera
+
+---
+
 **Extra Credit**
 
 You’ll earn **bonus points** for creative use of the AI camera **in combination** with any of our specialized components from the hackathon inventory. Think beyond just image capture; integrate sensors, mechanical elements, or additional microcontrollers to create a truly innovative solution.
