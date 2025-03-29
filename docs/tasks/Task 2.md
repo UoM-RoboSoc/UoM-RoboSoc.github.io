@@ -7,6 +7,8 @@ nav_order: 2
 
 # Mona Delivery Bot
 
+Need help with programming the mona? Look in the github repository link in the top right there should be more up to date information.
+
 Welcome to the Mona Delivery Bot challenge! In this task, your objective is to program your provided Mona Bot to navigate a single-line maze and perform simulated payload pickups and dropoffs at designated points. Using a live video feed and computer vision, you must ensure that your bot stays on track and pauses at each checkpoint for the required duration. Read on for detailed information on maze and marker specifications, camera setup, communication protocols, scoring breakdown, testing guidelines, and more to help you succeed in this challenge.
 
 ![Maze]({{ '/assets/images/mona/maze.png' | relative_url }})
@@ -69,7 +71,7 @@ Welcome to the Mona Delivery Bot challenge! In this task, your objective is to p
   Each Mona Bot comes with an **Arduino Nano** and an **NRF24L01 wireless communication module**, allowing your laptop to send and receive data to the bot.  
   You'll need to set up a corresponding **NRF module on your own laptop**, connected via USB, to serve as a wireless bridge between your control script and the robot.
 
-  For hardware setup, code structure, and examples of communication protocols, refer to the official [ESP-MONA GitHub Repository](https://github.com/ICE9-Robotics).  
+  For hardware setup, code structure, and examples of communication protocols, refer to the official [Mona GitHub Repository](https://github.com/UoM-Robotics-Society/HackABot2025).  
   This repo contains everything you need to get started with the **Mona Swarm platform**, including setup guidance for both **hardware and software**.
 
 - **Command Protocol**  
@@ -154,7 +156,9 @@ Welcome to the Mona Delivery Bot challenge! In this task, your objective is to p
 
 ## FAQs / Troubleshooting
 
-- Updated throughout the event
+- **Where can I find more info on the mona's?**
+
+In the GitHub Repository Link in the top right of the site.
 
 ---
 
