@@ -14,6 +14,14 @@ nav_order: 2
 
 Welcome to Hack-A-Bot 2025! This site is your go-to hub for everything happening during the hackathon. Here you’ll find details on each challenge task (which you should have already selected), as well as links to example code, tutorials, and other resources to get you up and running. Whether you’re stuck, curious, or just exploring, you’ll find what you need right here.
 
+## We’re using GitHub Discussions as a space for you to ask questions.
+
+Here is the link:
+https://github.com/UoM-RoboSoc/UoM-RoboSoc.github.io/discussions
+
+Along with a quick start guide:
+https://docs.github.com/en/discussions/quickstart#creating-a-new-discussion
+
 ---
 
 ## Table of Contents
