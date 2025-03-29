@@ -16,11 +16,11 @@ Welcome to Hack-A-Bot 2025! This site is your go-to hub for everything happening
 
 ## We’re using GitHub Discussions as a space for you to ask questions.
 
-Here is the link:
-https://github.com/UoM-RoboSoc/UoM-RoboSoc.github.io/discussions
+Here is the link:  
+[GitHub Discussions](https://github.com/UoM-RoboSoc/UoM-RoboSoc.github.io/discussions)
 
-Along with a quick start guide:
-https://docs.github.com/en/discussions/quickstart#creating-a-new-discussion
+Along with a quick start guide:  
+[GitHub Discussions Quickstart](https://docs.github.com/en/discussions/quickstart#creating-a-new-discussion)
 
 ---
 
